@@ -1,0 +1,74 @@
+alias la="ls -ltrh --color"
+alias ls="ls --color"
+
+alias grep="grep --color=auto"
+
+alias home="cd /home/carlos.bastarz"
+alias work="cd /mnt/beegfs/carlos.bastarz"
+
+alias sq="squeue"
+alias squ="squeue --user carlos.bastarz"
+
+#alias gnu='module purge \
+#           module load gnu9/9.4.0 \
+#           module load ucx/1.11.2 \
+#           module load openmpi4/4.1.1 \
+#           module load netcdf/4.7.4 \
+#           module load netcdf-fortran/4.5.3 \
+#           module load phdf5/1.10.8 \
+#           module load hwloc \
+#           module load libfabric/1.13.0 \
+#           export PATH=/mnt/beegfs/carlos.bastarz/libraries/bin:$PATH \
+#           export LD_LIBRARY_PATH=/opt/ohpc/pub/libs/gnu9/impi/netcdf-fortran/4.5.3/lib:/opt/ohpc/pub/libs/gnu9/impi/netcdf/4.7.4/lib:/mnt/beegfs/carlos.bastarz/libraries/lib:$LD_LIBRARY_PATH \
+#           rm /mnt/beegfs/carlos.bastarz/libraries/bin \ 
+#           rm /mnt/beegfs/carlos.bastarz/libraries/lib \
+#           rm /mnt/beegfs/carlos.bastarz/libraries/include \
+#           ln -s /mnt/beegfs/carlos.bastarz/libraries/bin_gnu /mnt/beegfs/carlos.bastarz/libraries/bin \
+#           ln -s /mnt/beegfs/carlos.bastarz/libraries/lib_gnu /mnt/beegfs/carlos.bastarz/libraries/lib \
+#           ln -s /mnt/beegfs/carlos.bastarz/libraries/include_gnu /mnt/beegfs/carlos.bastarz/libraries/include'
+#
+#alias intel='module purge \
+#             module load intel \
+#             module load impi \
+#             module load phdf5 \
+#             module load netcdf \
+#             module load netcdf-cxx \
+#             module load netcdf-fortran \
+#             module load hwloc \
+#             export PATH=/mnt/beegfs/carlos.bastarz/libraries/bin:$PATH \
+#             export LD_LIBRARY_PATH=/mnt/beegfs/carlos.bastarz/libraries/lib:$LD_LIBRARY_PATH \
+#             rm /mnt/beegfs/carlos.bastarz/libraries/bin \
+#             rm /mnt/beegfs/carlos.bastarz/libraries/lib \
+#             rm /mnt/beegfs/carlos.bastarz/libraries/include \
+#             ln -s /mnt/beegfs/carlos.bastarz/libraries/bin_intel /mnt/beegfs/carlos.bastarz/libraries/bin \
+#             ln -s /mnt/beegfs/carlos.bastarz/libraries/lib_intel /mnt/beegfs/carlos.bastarz/libraries/lib \
+#             ln -s /mnt/beegfs/carlos.bastarz/libraries/include_intel /mnt/beegfs/carlos.bastarz/libraries/include'
+
+alias mclean='module purge; \
+              module load autotools; \
+              module load prun/2.2; \
+              module load gnu9/9.4.0; \
+              module load hwloc/2.5.0; \
+              module load ucx/1.11.2; \
+              module load libfabric/1.13.0; \
+              module load openmpi4/4.1.1; \
+              module load ohpc'
+
+alias mgnu='module purge; \
+            module load gnu9/9.4.0; \
+            module load ucx/1.11.2; \
+            module load openmpi4/4.1.1; \
+            module load netcdf/4.7.4; \
+            module load netcdf-fortran/4.5.3; \
+            module load phdf5/1.10.8; \
+            module load hwloc; \
+            module load libfabric/1.13.0' 
+
+alias mintel='module purge; \
+              module load intel; \
+              module load impi; \
+              module load phdf5; \
+              module load netcdf; \
+              module load netcdf-cxx; \
+              module load netcdf-fortran; \
+              module load hwloc' 
